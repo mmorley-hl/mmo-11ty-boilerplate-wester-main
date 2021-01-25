@@ -4,22 +4,29 @@
 		<head>
 			<meta charset='utf-8'>
 			<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-			<title>eleventy blog sample</title>
+			<title>Mathias Westerweller</title>
 			<meta name='viewport' content='width=device-width, initial-scale=1'>
-			<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-			<script src='main.js'></script>
+			<link rel='stylesheet' type='text/css' media='screen' href='../assets/main.css'>
+			<script src='../assets/main.js'></script>
+		
+			
 		</head>
-		<body>
-			<header>
-				<em>
-					<a href="{{ '/' | url }}">{{ metadata.title }}</a>
-				</em>
-				{% include "nav.njk" %}
-			</header>
-			<main>
-				<h1>eleventy blog sample</h1>
-				{{ content | safe }}
-			</main>
-			{% include "footer.njk" %}
+		<body data-barba="wrapper">
+		
+			<div>
+			
+				<header>
+					<em>
+						<a href="{{ '/' | url }}">{{ metadata.title }}</a>
+					</em>
+					{% include "nav.njk" %}
+				</header>
+				
+				<main data-barba="container" class="is-{% if title %}{{ title }}{% endif %}" data-barba-namespace="{% if title %}{{ title }}{% endif %}" data-background="#5C85EE">
+					{{ content | safe }}
+				</main>
+				{% include "footer.njk" %}
+			</div>
+		<script src='../assets/vendor.js'></script>
 		</body>
 	</html>

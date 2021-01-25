@@ -1,4 +1,18 @@
+@import 'main.scss';
+
+@import 'home.scss';
+@import 'fade.scss';
+@import 'clip.scss';
+@import 'with-cover.scss';
+@import 'utils.scss';
+
 html {
 	font-family: sans-serif;
-	background: #cbe3f5;
+	background: blue;
+	
+
+  }
+
+  body {
+	color: black;
   }

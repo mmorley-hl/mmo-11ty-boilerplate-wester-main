@@ -1,19 +1,25 @@
 ---
 layout: home.njk
-title: Home
+title: home
 date: 2016-01-01T00:00:00.000Z
 permalink: /home/home.html
 eleventyNavigation:
   key: Home
   order: 0
 ---
-# Welcome
+# WELCOME TO THE WORLD OF WELLER
 
-Hi, i am Markus Morley. Desiging, living and working in Frankfurt am Main. i love design. build ux prototypes. develop frontend components for atomic design. develop and create digital projects for a large scale approach.
+MATTHIAS WESTERWELLER
+DJ, Veranstalter, Musikjournalist und Radiomacher mit eigener Sendung
 
+Sie möchten, dass aus Ihrer Party »a night to remember« wird? Dass auf Ihrer Hochzeit auch auf der Tanzfläche gefeiert werden kann? Dass Ihr Geburtstag auch musikalisch zum schönsten Tag des Jahres wird? Dass Ihr Event ein echtes Ereignis wird und Ihre Freunde, Kollegen und Geschäftspartner begeistert? Dann melden Sie sich bei mir: weller@stack-o-sounds.com
 
-## about this page
+Herzlich willkommen und viel Spaß!
 
-This is a template for building a simple blog website with the [Eleventy static site generator](https://www.11ty.io), with deployment to [Netlify](https://www.netlify.com).
+<h5>
+            <a href="https://www.facebook.com/worldofweller" target="_blank"> <img src="daten/logos/logo-fb.png" alt="facebook" height="30"></a>
+            <a href="https://www.instagram.com/theworldofweller/" target="_blank"> <img src="daten/logos/logo-in.png" alt="instagram" height="30"></a>
+            <a href="https://soundcloud.com/weller" target="_blank"> <img src="daten/logos/logo-sc.png" alt="soundcloud" height="30"></a>
+            <a href="https://www.xing.com/profile/Matthias_Westerweller" target="_blank"> <img src="daten/logos/logo-xing.jpg" alt="xing" height="30"></a>
+        </h5>
 
-Includes [Netlify CMS](https://www.netlifycms.org) for WYSIWYG content editing, and [Netlify Forms](https://www.netlify.com/docs/form-handling) for processing your site's form data.
