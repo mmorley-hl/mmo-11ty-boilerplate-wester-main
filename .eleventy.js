@@ -1,7 +1,14 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function (eleventyConfig) {
+	eleventyConfig.setBrowserSyncConfig({
+		open: 'external',
+		browser: "chrome"
+	});
+
 	eleventyConfig.addPassthroughCopy("src/images");
+	eleventyConfig.addPassthroughCopy("src/assets/fonts");
+	eleventyConfig.addPassthroughCopy("src/assets/images");
 	eleventyConfig.addPassthroughCopy("src/admin");
 	eleventyConfig.addPassthroughCopy("src/favicon.ico");
 

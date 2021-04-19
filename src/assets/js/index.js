@@ -1,54 +1,27 @@
+// import css for webpack
 import '../css/index.scss';
+// javscript imports
+import './_cursor.js';
+// import './_test.js';
+import './_header.js';
+import './_mapbox.js';
+import './_color_switch.js';
+import './_wow.js';
+import './_scrollAnker.js';
+import './_carousel.js';
+import './_toTopButton.js';
+import './_headroom.js';
+import './_mobile_menu_button.js';
+import './_random_color.js';
+import smoothscroll from 'smoothscroll-polyfill'
 
-import barba from '@barba/core';
-import barbaCss from '@barba/css';
+import simpleParallax from 'simple-parallax-js';
 
-console.log('Hello again1');
+smoothscroll.polyfill()
 
-// tell Barba to use the css plugin
-barba.use(barbaCss);
+var image = document.getElementsByClassName('thumbnail');
+new simpleParallax(image);
+// new simpleParallax(image, {
+// 	scale: 1.5
+// });
 
-const body = document.querySelector('body');
-
-barba.hooks.before((data) => {
-  const background = data.current.container.dataset.background;
-  body.style.setProperty('--page-background', background);
-});
-
-barba.init({
-  transitions: [
-    {
-      name: 'home',
-      sync: true,
-      to: { namespace: ['home'] },
-      once() {},
-      leave() {},
-      enter() {},
-    }, {
-      name: 'fade',
-      to: { namespace: ['fade'] },
-      leave() {},
-      enter() {},
-    }, {
-      name: 'clip',
-      sync: true,
-      to: { namespace: ['clip'] },
-      leave() {},
-      enter() {},
-    }, {
-      name: 'with-cover',
-      to: { namespace: ['with-cover'] },
-      leave() {},
-      enter() {},
-    },
-  ],
-});
-console.log('Hello again2');
-
-// eslint-disable-next-line no-console
-console.log('Hello again3');
-
-Array.from(document.getElementsByTagName('p')).forEach((p, index) => {
-  // eslint-disable-next-line no-console
-  console.log(`p ${index}, startsWith('W')`, p, p.innerHTML.startsWith('W'));
-});

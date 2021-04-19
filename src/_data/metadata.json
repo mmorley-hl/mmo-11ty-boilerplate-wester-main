@@ -1,5 +1,6 @@
 {
-  "title": "MATTHIAS WESTERWELLER",
-  "description": "A template for building a simple blog website with the Eleventy static site generator, Netlify CMS, and with deployment to Netlify.",
-  "url": "https://matthias-westerweller.netlify.app"
+  "title": "OstStern",
+  "description": "Oststern",
+  "url": "https://oststern.netlify.app",
+  "bodytext": "<p>lorem main data</p>"
 }

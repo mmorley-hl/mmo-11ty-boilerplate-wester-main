@@ -6,4 +6,3 @@ module.exports = merge(common, {
 	// Allow watching and live reloading of assets
 	watch: true,
 });
-
