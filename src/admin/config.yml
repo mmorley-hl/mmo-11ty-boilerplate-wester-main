@@ -38,7 +38,7 @@ collections:
     files:
       - label: "Home Page"
         name: "home"
-        file: "src/pages/home.njk"
+        file: "src/pages/home.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
