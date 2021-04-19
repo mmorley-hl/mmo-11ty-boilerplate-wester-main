@@ -7,3 +7,5 @@ section: home
 		{{ layoutContent | safe }}
 	</div>
 </div>
+	{% set postslist = collections.posts %}
+		{% include "postslist.njk" %}
