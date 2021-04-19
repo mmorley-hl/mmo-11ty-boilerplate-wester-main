@@ -38,6 +38,8 @@ collections:
     files:
       - label: "Home Page"
         name: "home"
+        editor: 
+          preview: false 
         file: "src/pages/home.md"
         fields:
           - {label: Title, name: title, widget: string}

@@ -1,4 +1,5 @@
 ---
+layout: home.njk
 image_src: https://picsum.photos/1000/1800/?random
 permalink: /index.html
 intro: test
@@ -20,3 +21,16 @@ team:
     position: mmmmo
     photo: src/images/uploads/Black_004.jpg
 ---
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+{% if bodytext %}
+{{bodytext}}
+{% endif %}
+{{title}}
